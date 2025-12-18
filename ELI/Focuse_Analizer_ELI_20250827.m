@@ -162,7 +162,7 @@ for ii =3:length(Dir)
     a0_70_persent = 0.855*1e-9*Laser_wavelenth*sqrt(I_70_persent);
     
     w0_70_um = Dia_70_persent_um/2 / 0.7759; % 1-exp(2*r^2/w0^2) = 0.7
-    I_w0_70 = 2*Laser_eng./((w0_70_um*1e-4).^2*pi*pulse_duration);
+    I_w0_70 = Laser_eng./((w0_70_um*1e-4).^2*pi*pulse_duration);
     a0_w0_70 = 0.855*1e-9*Laser_wavelenth*sqrt(I_w0_70);
 
 
